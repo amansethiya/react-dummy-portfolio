@@ -1,0 +1,85 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 2px groove rgb(42, 215, 237);;
+}
+.Navbar img{
+    width: 70px
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 30px
+}
+.nav-menu li{
+    cursor: pointer;
+    
+}
+.AnchorLink{ 
+    text-decoration: none;
+    color: rgb(0, 204, 255);
+}   
+.nav-connect{
+    padding: 5px 20px;
+    border: 3px solid rgb(42, 215, 237);;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ .mopen{
+    display: none;
+ }
+  .mclose{
+    display: none;
+  }
+
+@media(max-width: 768px){
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        gap: 30px;
+        background-color: rgb(48, 48, 48);
+        width: 320px;
+        height: 100vh;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-menu li{
+        
+        font-size: 30px;
+        padding-top: 50px;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .Navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px 10px 20px;
+       
+        
+    }
+    .nav-connect{
+        display: none;
+    }
+    .mopen{
+        display: block;
+        position: relative;  
+        right: 30px;
+    }
+    .mclose{
+        display: fixed;  
+        position: relative;
+        top: 30px;
+        right: 80px;
+
+    }
+
+}
