@@ -75,7 +75,7 @@
         right: 30px;
     }
     .mclose{
-        display: fixed;  
+        display: block;  
         position: relative;
         top: 30px;
         right: 80px;
